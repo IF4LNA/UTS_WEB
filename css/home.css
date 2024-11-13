@@ -1,0 +1,58 @@
+/* CSS untuk Navbar dan Dropdown */
+header {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Agar z-index bekerja dengan baik */
+}
+
+#profileDropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 10; /* dropdown berada di atas elemen lainnya */
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  z-index: 1; /* Pastikan carousel di bawah dropdown */
+  width: 100%; /* Atur lebar sesuai dengan lebar kontainer carousel */
+}
+
+/* Pastikan slide carousel berada di bawah dropdown */
+.carousel-slide {
+  transition: opacity 0.5s ease-in-out;
+  width: 100%; /* Menjaga lebar gambar sesuai dengan lebar carousel */
+  height: 300px; /* Tentukan tinggi yang tetap untuk semua gambar */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gambar dalam carousel */
+.carousel-slide img {
+  width: 100%; /* Gambar akan mengisi seluruh lebar kontainer */
+  height: 100%; /* Gambar akan mengisi seluruh tinggi kontainer */
+  object-fit: cover; /* Memastikan gambar tetap menjaga proporsi dan terpotong jika perlu */
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fbbf24; /* Warna kuning terang saat hover */
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .social-icons i {
+  font-size: 1.5rem;
+}

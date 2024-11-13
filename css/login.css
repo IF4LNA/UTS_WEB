@@ -1,0 +1,113 @@
+/* Styling untuk kontainer form */
+.form-container {
+  background-color: #1f2937; /* bg-gray-800 */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling untuk judul form */
+.form-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Styling untuk label */
+.form-label {
+  display: block;
+  font-size: 0.875rem; /* text-sm */
+  margin-bottom: 0.5rem;
+}
+
+/* Styling untuk input form */
+.form-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #374151; /* border-gray-700 */
+  border-radius: 0.25rem;
+  background-color: #111827; /* bg-gray-900 */
+  color: #fff;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  border-color: #ef4444; /* focus:border-red-500 */
+}
+
+/* Styling untuk tombol submit */
+.submit-button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #ff6f61; /* bg-red-600 */
+  border-radius: 0.25rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #b91c1c; /* bg-red-700 */
+}
+
+/* Styling untuk pesan error */
+.error-message {
+  font-size: 0.875rem; /* text-sm */
+  color: #f87171; /* text-red-500 */
+  margin-top: 0.25rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Background Image */
+body {
+  background-image: url("/img/background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Styling untuk form container */
+.form-container {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Warna latar belakang dengan opasitas */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo */
+.form-container .logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Animasi Float In */
+@keyframes floatIn {
+  0% {
+    transform: translateY(20px); /* Mulai sedikit di bawah posisi */
+    opacity: 0; /* Transparan di awal */
+  }
+  100% {
+    transform: translateY(0); /* Kembali ke posisi normal */
+    opacity: 1; /* Tampak sepenuhnya */
+  }
+}
+
+/* Terapkan animasi ke kontainer utama */
+.form-container {
+  background-color: rgba(0, 0, 0, 0.8); /* Latar belakang dengan opasitas */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  animation: floatIn 1s ease-out forwards; /* Terapkan animasi floatIn */
+}

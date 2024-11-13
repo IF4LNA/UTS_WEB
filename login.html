@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - RentHive</title>
+    <!-- Tambahkan Tailwind CSS dari CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- file CSS eksternal -->
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="bg-black text-white h-screen flex items-center justify-center">
+    <!-- Kontainer utama -->
+    <div class="w-full max-w-md form-container relative">
+      <!-- Logo -->
+      <div class="flex justify-center mb-4">
+        <img
+          src="img/Renthive_putih.png"
+          alt="RentHive Logo"
+          class="w-20 h-auto"
+        />
+      </div>
+
+      <h2 class="form-title">Sign In</h2>
+
+      <!-- Formulir Login -->
+      <form id="loginForm" class="space-y-4">
+        <div>
+          <label for="username" class="form-label">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            class="form-input"
+          />
+          <p id="usernameError" class="error-message hidden">
+            Username tidak boleh kosong atau salah.
+          </p>
+        </div>
+        <div>
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            class="form-input"
+          />
+          <p id="passwordError" class="error-message hidden">
+            Password tidak boleh kosong atau salah.
+          </p>
+        </div>
+        <button type="button" onclick="validateLogin()" class="submit-button">
+          Sign In
+        </button>
+      </form>
+
+      <!-- tambahan -->
+      <div class="flex justify-between items-center mt-4 text-sm text-gray-500">
+        <div>
+          <input type="checkbox" id="remember" class="mr-2" />
+          <label for="remember">Remember me</label>
+        </div>
+        <a href="#" class="text-gray-400 hover:underline">Need help?</a>
+      </div>
+
+      <!-- Footer -->
+      <p class="mt-8 text-center text-gray-400">
+        New to RentHive?
+        <a href="register.html" class="text-white hover:underline"
+          >Sign up now</a
+        >.
+      </p>
+      <p class="text-xs text-gray-500 text-center mt-2">
+        This page is protected by Google reCAPTCHA to ensure you're not a bot.
+        &copy; 2024 RentHive. by 22552011228 Muhammad Fajar Syaffiqri TIF RP 22
+        CID. All rights reserved.
+        <a href="about.html" class="text-gray-400 hover:underline">Learn more</a
+        >.
+      </p>
+    </div>
+
+    <!-- file JavaScript -->
+    <script src="js/login.js"></script>
+  </body>
+</html>

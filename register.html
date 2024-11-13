@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - RentHive</title>
+    <!-- Link ke Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link ke file CSS eksternal  -->
+    <link rel="stylesheet" href="css/register.css" />
+    <style>
+      body,
+      html {
+        height: 100%; /* mengambil seluruh tinggi layar */
+        margin: 0;
+      }
+
+      body {
+        background-image: url("img/Background.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column; /* flexbox dengan arah kolom */
+        justify-content: flex-start; /* bagian atas halaman dengan konten */
+      }
+
+      /* Footer styling */
+      footer {
+        background-color: #1a202c; /* Warna latar belakang footer */
+        color: white; /* Warna teks */
+        text-align: center; /* Posisi teks di tengah */
+        padding: 20px 0; /* Padding atas dan bawah */
+        width: 100%;
+        margin-top: auto; /* footer berada di bawah */
+      }
+
+      footer p {
+        font-size: 14px;
+        margin: 0;
+      }
+
+      footer a {
+        color: #e6e6e6;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white h-screen flex items-center justify-center">
+    <!-- Kontainer Utama -->
+    <div
+      class="w-full max-w-md form-container bg-gray-800 p-8 rounded-lg shadow-lg z-10"
+    >
+      <!-- Logo di atas judul -->
+      <div class="text-center mb-4">
+        <img
+          src="img/Renthive_putih.png"
+          alt="RentHive Logo"
+          class="mx-auto w-16 h-16"
+        />
+      </div>
+
+      <!-- Judul -->
+      <h2 class="text-3xl font-bold text-center mb-6">Create Account</h2>
+
+      <!-- Formulir Pendaftaran -->
+      <form id="registerForm" class="space-y-4">
+        <!-- Nama Lengkap -->
+        <div>
+          <label for="name" class="block text-sm font-medium">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full p-2 bg-gray-700 border border-gray-600 rounded-md"
+            placeholder="Enter your full name"
+          />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email" class="block text-sm font-medium">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full p-2 bg-gray-700 border border-gray-600 rounded-md"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <!-- Username -->
+        <div>
+          <label for="username" class="block text-sm font-medium"
+            >Username</label
+          >
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            class="w-full p-2 bg-gray-700 border border-gray-600 rounded-md"
+            placeholder="Create a username"
+          />
+        </div>
+
+        <!-- Password -->
+        <div>
+          <label for="password" class="block text-sm font-medium"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            class="w-full p-2 bg-gray-700 border border-gray-600 rounded-md"
+            placeholder="Create a password"
+          />
+        </div>
+
+        <!-- Confirm Password -->
+        <div>
+          <label for="confirmPassword" class="block text-sm font-medium"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+            class="w-full p-2 bg-gray-700 border border-gray-600 rounded-md"
+            placeholder="Confirm your password"
+          />
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          type="button"
+          onclick="validateRegister()"
+          class="w-full p-2 mt-4 bg-yellow-500 text-white rounded-md hover:bg-yellow-600"
+        >
+          Register
+        </button>
+      </form>
+
+      <!-- tambahan -->
+      <div class="text-center mt-4 text-sm text-gray-400">
+        <p>
+          Already have an account?
+          <a href="login.html" class="text-white hover:underline">Login here</a
+          >.
+        </p>
+      </div>
+
+      <!-- Footer -->
+
+      <p class="text-xs text-gray-500 text-center mt-2">
+        &copy; 2024 RentHive. by 22552011228 Muhammad Fajar Syaffiqri TIF RP 22
+        CID. All rights reserved.
+        <a href="#" class="text-gray-400 hover:underline">Learn more</a>.
+      </p>
+    </div>
+
+    <!-- file JavaScript eksternal -->
+    <script src="js/register.js"></script>
+  </body>
+</html>

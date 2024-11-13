@@ -1,0 +1,79 @@
+/* Background untuk seluruh halaman */
+body {
+  background-image: url("/img/Background.png");
+  background-size: cover; /* Membuat gambar mengisi seluruh layar */
+  background-position: center; /* Mengatur posisi gambar agar terpusat */
+  background-attachment: fixed; /* Agar background tetap saat scroll */
+  color: white; /* Menjaga teks tetap terlihat */
+}
+
+/* Animasi "float-in" */
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Mulai dari bawah */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Berhenti di posisi normal */
+  }
+}
+
+/* Tambahkan kelas "hidden" untuk menyembunyikan elemen saat halaman pertama kali dimuat */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px); /* Mulai dari bawah */
+}
+
+/* Kelas untuk membuat elemen muncul */
+.visible {
+  animation: floatIn 1s ease-out forwards; /* Efek animasi */
+}
+
+/* Styling untuk setiap section */
+.section {
+  height: 100vh; /* Setiap section menempati satu layar penuh */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px); /* Elemen mulai dari bawah */
+}
+
+/* Styling untuk setiap about section */
+.about-section {
+  background-color: rgba(
+    45,
+    45,
+    45,
+    0.7
+  ); /* Warna latar belakang transparan untuk membedakan konten */
+  color: white;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+}
+
+/* Gaya footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}

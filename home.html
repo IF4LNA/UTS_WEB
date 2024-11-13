@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage - RentHive</title>
+    <!-- Tailwind CSS dari CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md border-b border-gray-200 py-4 px-6">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="home.html" class="flex items-center space-x-2">
+          <img
+            src="img/Renthive_Logo1.png"
+            alt="RentHive Logo"
+            class="w-10 h-10"
+          />
+          <span class="text-xl font-semibold text-gray-800">RentHive</span>
+        </a>
+
+        <!-- Search bar -->
+        <div class="flex items-center w-1/2">
+          <input
+            type="text"
+            placeholder="Search for products..."
+            class="w-full px-4 py-2 border rounded-l-md focus:outline-none focus:ring focus:ring-yellow-500"
+          />
+          <button
+            class="px-4 py-2 bg-yellow-500 text-white rounded-r-md hover:bg-yellow-600"
+          >
+            Search
+          </button>
+        </div>
+
+        <!-- Icon navigasi -->
+        <div class="flex items-center space-x-6">
+          <!-- Keranjang -->
+          <a href="#" class="relative">
+            <svg
+              class="w-6 h-6 text-gray-600 hover:text-yellow-600"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 3h2l3.6 7.59L5.25 17h13.83l1.96-3.41H8.7l1.1-2H20a1 1 0 0 0 .96-.74l2-8a1 1 0 0 0-.96-1.26H6.21l-.7-2H1V3h2zm5 18a2 2 0 1 0 4 0 2 2 0 0 0-4 0zm10 0a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"
+              />
+            </svg>
+          </a>
+
+          <!-- Dropdown Profil -->
+          <div class="relative">
+            <button class="flex items-center space-x-2" id="profileButton">
+              <img
+                src="img/Profile.png"
+                alt="Profile Icon"
+                class="w-8 h-8 rounded-full"
+              />
+            </button>
+            <!-- Dropdown Menu -->
+            <div
+              class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 text-gray-700"
+              id="profileDropdown"
+            >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Account</a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                >Order History</a
+              >
+              <a href="index.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Logout</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Carousel -->
+    <div class="container mx-auto mt-8">
+      <div class="carousel bg-gray-200 rounded-lg p-4">
+        <!-- Gambar Carousel -->
+        <div class="carousel-slide">
+          <img src="img/banner1.jpg" alt="Banner 1" class="w-full rounded-lg" />
+        </div>
+        <div class="carousel-slide hidden">
+          <img src="img/banner2.jpg" alt="Banner 2" class="w-full rounded-lg" />
+        </div>
+        <div class="carousel-slide hidden">
+          <img src="img/banner3.jpg" alt="Banner 3" class="w-full rounded-lg" />
+        </div>
+      </div>
+    </div>
+
+    <section class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Produk 1 -->
+            <div class="product-card">
+                <img src="img/product1.jpg" alt="Product 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">FocusWide 4K All-in-One Vlogging Camera</h3>
+                <p class="text-lg text-yellow-500">Rp 500,000/hari</p>
+                <button class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600">Add to Cart</button>
+            </div>
+    
+            <!-- Produk 2 -->
+            <div class="product-card">
+                <img src="img/product2.jpg" alt="Product 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">AuraPro StudioLight LED</h3>
+                <p class="text-lg text-yellow-500">Rp 1,200,000/hari</p>
+                <button class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600">Add to Cart</button>
+            </div>
+    
+            <!-- Produk 3 -->
+            <div class="product-card">
+                <img src="img/product3.jpg" alt="Product 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Drone - SkyHawk QuantumFly</h3>
+                <p class="text-lg text-yellow-500">Rp 750,000/hari</p>
+                <button class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600">Add to Cart</button>
+            </div>
+    
+            <!-- Produk 4 -->
+            <div class="product-card">
+                <img src="img/product4.jpg" alt="Product 4" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Polaroid Instaprint 2</h3>
+                <p class="text-lg text-yellow-500">Rp 400,000/hari</p>
+                <button class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600">Add to Cart</button>
+            </div>
+    
+            <!-- Produk 5 -->
+            <div class="product-card">
+                <img src="img/product5.jpg" alt="Product 5" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Product 5</h3>
+                <p class="text-lg text-yellow-500">Rp 950,000/hari</p>
+                <button class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600">Add to Cart</button>
+            </div>
+    
+            <!-- Produk 6 -->
+            <div class="product-card">
+                <img src="img/product6.jpg" alt="Product 6" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Product 6</h3>
+                <p class="text-lg text-yellow-500">Rp 1,300,000/hari</p>
+                <button class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600">Add to Cart</button>
+            </div>
+    
+            <!-- Produk 7 -->
+            <div class="product-card">
+                <img src="img/product7.jpg" alt="Product 7" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Product 7</h3>
+                <p class="text-lg text-yellow-500">Rp 550,000/hari</p>
+                <button class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600">Add to Cart</button>
+            </div>
+    
+            <!-- Produk 8 -->
+            <div class="product-card">
+                <img src="img/product8.jpg" alt="Product 8" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Product 8</h3>
+                <p class="text-lg text-yellow-500">Rp 650,000/hari</p>
+                <button class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600">Add to Cart</button>
+            </div>
+    
+            <!-- Produk 9 -->
+            <div class="product-card">
+                <img src="img/product9.jpg" alt="Product 9" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Product 9</h3>
+                <p class="text-lg text-yellow-500">Rp 1,100,000/hari</p>
+                <button class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600">Add to Cart</button>
+            </div>
+    
+            <!-- Produk 10 -->
+            <div class="product-card">
+                <img src="img/product10.jpg" alt="Product 10" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Product 10</h3>
+                <p class="text-lg text-yellow-500">Rp 2,000,000/hari</p>
+                <button class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600">Add to Cart</button>
+            </div>
+    
+            <!-- Produk 11 -->
+            <div class="product-card">
+                <img src="img/product11.jpg" alt="Product 11" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Product 11</h3>
+                <p class="text-lg text-yellow-500">Rp 800,000/hari</p>
+                <button class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600">Add to Cart</button>
+            </div>
+    
+            <!-- Produk 12 -->
+            <div class="product-card">
+                <img src="img/product12.jpg" alt="Product 12" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Product 12</h3>
+                <p class="text-lg text-yellow-500">Rp 1,500,000/hari</p>
+                <button class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+     
+    </div>
+
+    <!-- file JavaScript eksternal -->
+    <script src="js/home.js"></script>
+    <script>
+      // Dropdown Toggle
+      document
+        .querySelector(".flex.items-center.space-x-2")
+        .addEventListener("click", function () {
+          document.getElementById("profileDropdown").classList.toggle("hidden");
+        });
+
+      // fungsi Carousel 
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".carousel-slide");
+      setInterval(() => {
+        slides[currentSlide].classList.add("hidden");
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.remove("hidden");
+      }, 3000); // Ganti setiap 3 detik
+    </script>
+  </body>
+  <footer class="bg-black text-white py-6">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <!-- footer Kiri: Logo dan Deskripsi -->
+        <div class="mb-4 md:mb-0">
+            <img src="img/Renthive_putih.png" alt="RentHive Logo" class="h-10">
+            <p class="mt-2 text-sm text-gray-400">Your trusted platform for event rentals. Rent anything, anytime!</p>
+        </div>
+
+        <!-- footer Tengah: Navigasi -->
+        <div class="flex space-x-8 mb-4 md:mb-0">
+            <a href="#" class="text-sm text-gray-400 hover:text-white">About Us</a>
+            <a href="#" class="text-sm text-gray-400 hover:text-white">Services</a>
+            <a href="#" class="text-sm text-gray-400 hover:text-white">Contact</a>
+            <a href="#" class="text-sm text-gray-400 hover:text-white">Privacy Policy</a>
+        </div>
+
+        <!-- footer Kanan: Sosial Media -->
+        <div class="flex space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <!-- footer bawah: Hak Cipta -->
+    <div class="text-center mt-6 text-sm text-gray-400">
+        <p>&copy; 2024 RentHive. by 22552011228 Muhammad Fajar Syaffiqri TIF RP 22
+            CID. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</html>
