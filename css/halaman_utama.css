@@ -99,7 +99,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background-image: url("img/Background.png");
+  background-image: url("Background.png");
   background-size: cover;
   background-position: center;
   background-color: #333; /* Warna latar belakang cadangan */
